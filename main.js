@@ -8,13 +8,14 @@ game = {
 	wordsWon : 0,
 	guessesRemaining : 10, //per word
 	currentWrd : null, //the word object
+	userGuess : [],
 	startGame : function (wrd){
 		//make sure the user has 10 guesses
 		this.resetGuessesRemaining();
-
+		
 		//get a random word from the array
 		this.currentWrd = new Word(this.wordBank[Math.floor(Math.random()* this.wordBank.length)]);
-
+		
 		this.currentWrd.getLets(); //populate currentWrd (made from Word constructor function) object with letters
 
 		this.keepPromptingUser();
