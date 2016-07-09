@@ -77,7 +77,8 @@ game = {
             } else if (self.guessesRemaining == 0) {
                 console.log('Game Over, Word Was: ', self.currentWrd.word);
                 console.log("");
-                console.log("=========================================================================");
+            	console.log('====================!!!!!!!!!!! You Lose !!!!!!!!!!!=======================');
+           		console.log("");
             } else {
                 console.log(self.currentWrd.wordRender());
             }
