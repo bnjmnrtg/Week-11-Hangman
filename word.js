@@ -15,6 +15,7 @@ var Word = function(wrd) {
             console.log('========================Welcome To the Spurs Hangman Game=======================');
             console.log('');
             console.log('------------------------!!!!!!!!!Guess A Letter!!!!!!!!!!!----------------------');
+            console.log(" ");
             for (var i = 0; i < this.word.length; i++) {
                 var myletterConstructed = new letterJs.Letter(this.word[i]);
                 // console.log(this.word);
